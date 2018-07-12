@@ -7,9 +7,9 @@ def do_thread(num):
     #枷锁
     lock.acquire()
     public_num -= 1
-    # #解锁
+    #解锁
     lock.release()
-    time.sleep(1)
+    # time.sleep(1)
     print("公共数字在线程{0}中是{1}".format(num, public_num))
 
 
