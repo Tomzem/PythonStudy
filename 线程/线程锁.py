@@ -18,7 +18,7 @@ threads_list = []
 lock = threading.Lock()
 for i in range(50):
     t = threading.Thread(target=do_thread, args=(i,))
-    t.setName("线程1{}".format(i))
+    t.setName("线程{}".format(i))
     t.start()
     threads_list.append(t)
 # 等待所有子线程结束
