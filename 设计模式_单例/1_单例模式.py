@@ -1,4 +1,4 @@
-class single(object):
+class Single(object):
     __instance = None
 
     def __init__(self):
@@ -10,7 +10,7 @@ class single(object):
         return cls.__instance
 
 
-a = single()
-b = single()
+a = Single()
+b = Single()
 print(a)
 print(b)
